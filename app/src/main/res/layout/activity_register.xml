@@ -113,31 +113,31 @@
                 android:orientation="horizontal"
                 android:layout_marginTop="10dp"
                 >
-                <RadioButton
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:text="female"
-                    android:id="@+id/genderWoman"
-                    android:layout_weight="1"
-                    android:checked="true"
-                    />
+                <!--<RadioButton-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="female"-->
+                    <!--android:id="@+id/genderWoman"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:checked="true"-->
+                    <!--/>-->
 
-                <RadioButton
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:text="male"
-                    android:id="@+id/genderMan"
-                    android:layout_weight="1"
-                    />
+                <!--<RadioButton-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="male"-->
+                    <!--android:id="@+id/genderMan"-->
+                    <!--android:layout_weight="1"-->
+                    <!--/>-->
             </RadioGroup>
 
-            <Spinner
-                android:layout_width="280dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:id="@+id/majorSpinner"
-                ></Spinner>
+            <!--<Spinner-->
+                <!--android:layout_width="280dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:id="@+id/majorSpinner"-->
+                <!--&gt;</Spinner>-->
 
             <Button
                 android:layout_width="280dp"

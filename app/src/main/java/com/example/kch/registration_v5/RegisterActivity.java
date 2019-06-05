@@ -37,9 +37,9 @@ public class RegisterActivity extends AppCompatActivity {
         setContentView(R.layout.activity_register);
 
         //스피너 객체 선언 및 리소스를 가져오는 부분
-        spinner = (Spinner)findViewById(R.id.majorSpinner);
-        adapter = ArrayAdapter.createFromResource(this, R.array.major, android.R.layout.simple_dropdown_item_1line);
-        spinner.setAdapter(adapter);
+       // spinner = (Spinner)findViewById(R.id.majorSpinner);
+  //      adapter = ArrayAdapter.createFromResource(this, R.array.major, android.R.layout.simple_dropdown_item_1line);
+       // spinner.setAdapter(adapter);
 
         final EditText idText = (EditText)findViewById(R.id.idText);
         final EditText passwordText = (EditText)findViewById(R.id.passwordText);
@@ -47,16 +47,16 @@ public class RegisterActivity extends AppCompatActivity {
 
         RadioGroup genderGroup = (RadioGroup)findViewById(R.id.genderGroup);
         int genderGroupID = genderGroup.getCheckedRadioButtonId();
-        userGender = ((RadioButton)findViewById(genderGroupID)).getText().toString();//초기화 값을 지정해줌
+    //    userGender = ((RadioButton)findViewById(genderGroupID)).getText().toString();//초기화 값을 지정해줌
 
         //라디오버튼이 눌리면 값을 바꿔주는 부분
-        genderGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(RadioGroup radioGroup, @IdRes int i) {
-                RadioButton genderButton = (RadioButton)findViewById(i);
-                userGender = genderButton.getText().toString();
-            }
-        });
+//        genderGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+//            @Override
+//            public void onCheckedChanged(RadioGroup radioGroup, @IdRes int i) {
+//                RadioButton genderButton = (RadioButton)findViewById(i);
+//                userGender = genderButton.getText().toString();
+//            }
+//        });
 
         //회원가입시 아이디가 사용가능한지 검증하는 부분
         final Button validateButton = (Button)findViewById(R.id.validateButton);
